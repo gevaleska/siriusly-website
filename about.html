@@ -11,6 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slideshow Otomatis</title>
+    <script src="script.js"></script>
 </head>
 <body>
     <nav>
@@ -19,35 +20,27 @@
             <div class="logo">
                 <img src="Siriusly Logo.png" alt="logo"> 
             </div>
-        <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li class="dropdown">
-                <a href="#kelas">Kelas ▾</a>
-                <ul class="dropdown-content">
-                    <li><a href="Matematika.html">Matematia</a></li>
-                    <li><a href="MatematikaIPA.html">Matematika IPA</a></li>
-                    <li><a href="FokusUjian.html">FOKUS UJIAN</a></li>
-                    <li><a href="FokusUTBK.html">UTBK</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="#event">Event ▾</a>
-                <ul class="dropdown-content">
-                    <li><a href="#event1">Webinar/Seminar</a></li>
-                    <li><a href="#event2">Workshop</a></li>
-                </ul>
-            </li>
-            <li><a href="#produk">Produk</a></li>
-            <li class="dropdown">
-                <a href="#contact">Kontak ▾</a>
-                <ul class="dropdown-content">
-                    <li><a href="#contact1">Whatsapp</a></li>
-                    <li><a href="#contact2">Instagram</a></li>
-                    <li><a href="#contact3">Lokasi</a></li>
-                </ul>
-            </li>
-            <li><a href="about.html">About</a></li>
-        </ul>
+            <ul class="navbar">
+                <li><a href="Index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#kelas">Kelas ▾</a>
+                    <ul class="dropdown-content">
+                        <li><a href="Matematika.html">Matematika</a></li>
+                        <li><a href="MatematikaIPA.html">Matematika IPA</a></li>
+                        <li><a href="FokusUjian.html">FOKUS UJIAN</a></li>
+                        <li><a href="FokusUTBK.html">UTBK</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="event.html">Event ▾</a>
+                    <ul class="dropdown-content">
+                        <li><a href="webinar.html">Webinar/Seminar</a></li>
+                        <li><a href="workshop.html">Workshop</a></li>
+                    </ul>
+                </li>
+                <li><a href="produk.html">Produk</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
     </nav>
 
 <!-- ISi Disini -->
@@ -87,8 +80,44 @@
         </div>
     </div>
 
+    <!-- Testimoni -->
+      <!-- Testimoni -->
+    <section class="testimoni">
+        <h2>Apa Kata Mereka?</h2>
+        <div class="testimoni-container">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="testimoni-wrapper">
+                <div class="testimoni-item">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1077/1077012.png" alt="Siswa Private Matematika">
+                    <p>"Belajar di Siriusly itu seru banget! Aku jadi lebih paham konsep dasar Matematika dan sekarang lebih percaya diri mengerjakan soal ujian!"</p>
+                    <h3>Syifa - Private Matematika</h3>
+                </div>
+                <div class="testimoni-item">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1077/1077012.png" alt="Siswa Matematika IPA">
+                    <p>"Materi yang sulit jadi lebih mudah dipahami karena banyak latihan soal dan penjelasan yang jelas. Tutor di Siriusly juga sangat sabar!"</p>
+                    <h3>Putri - Matematika IPA</h3>
+                </div>
+                <div class="testimoni-item">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1077/1077012.png" alt="Siswa Matematika IPA">
+                    <p>"Dulu takut remedial Matematika, sekarang malah jadi juara kelas! Terima kasih Siriusly!"</p>
+                    <h3>Dito, Siswa SMP Kelas 9</h3>
+                </div>
+                <div class="testimoni-item">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1077/1077012.png" alt="Siswa Matematika IPA">
+                    <p>"Berkat Siriusly, nilai PAS anakku naik drastis! Dia sekarang lebih percaya diri dan rajin berdoa sebelum ujian"</p>
+                    <h3>Ibu Rina, Orang Tua Siswa SD</h3>
+                </div>
+                <div class="testimoni-item">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1077/1077012.png" alt="Siswa Matematika IPA">
+                    <p>"Lolos CPNS berkat strategi TWK Siriusly. Materi integrasi Islam & kebangsaan bikin saya beda dari peserta lain!"</p>
+                    <h3>Andi, Lulusan Ujian Kedinasan 2023</h3>
+                </div>
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
         
-
+    <!-- Footer -->
     <section class="info-section">
         <div class="info-container">
     
@@ -124,6 +153,7 @@
                     <div class="social-icons">
                         <a href="https://wa.me/6281313772566"><img src="whatsapp.png" alt="Whatsapp"></a>
                         <a href="https://instagram.com"><img src="instagram.png" alt="Instagram"></a>
+                        <a href="https://tiktok.com/@siriuslyid"><img src="tik-tok.png" alt="YouTube"></a>
                         <a href="https://youtube.com"><img src="youtube.png" alt="YouTube"></a>
                     </div>
                 </div>
