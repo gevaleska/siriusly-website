@@ -1,227 +1,664 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Judul Tab Website -->
-    <title>Bimbingan Belajar Siriusly</title>
+    <title>siriusly Academy - Bimbingan Belajar Terbaik di Bandung</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/fontawesome.min.css">
-    <link rel="icon" type="image/png" href="Logo Siriusly (1).png">
-    <script src="javascript.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="wrapper">
-            <!-- NAMA JUDUL WEBSITE -->
-            <div class="logo">
-                <img src="Siriusly Logo.png" alt="logo"> 
-            </div>
-        <ul class="navbar">
-            <li><a href="Index.html">Home</a></li>
-            <li class="dropdown">
-                <a href="#kelas">Kelas ▾</a>
-                <ul class="dropdown-content">
-                    <li><a href="Matematika.html">Matematika</a></li>
-                    <li><a href="MatematikaIPA.html">Matematika IPA</a></li>
-                    <li><a href="FokusUjian.html">FOKUS UJIAN</a></li>
-                    <li><a href="FokusUTBK.html">UTBK</a></li>
-                </ul>
-            </li>
-            <li class="dropdown">
-                <a href="event.html">Event ▾</a>
-                <ul class="dropdown-content">
-                    <li><a href="webinar.html">Webinar/Seminar</a></li>
-                    <li><a href="workshop.html">Workshop</a></li>
-                </ul>
-            </li>
-            <li><a href="produk.html">Produk</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
-    <div class="logo-container">
-        <img src="Siriusly Logo.png" alt="Logo Siriusly">
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-spinner"></div>
+        <p>Memuat siriusly Academy...</p>
     </div>
 
-    <section class="promo-section">
-        <div class="promo-text">
-            <h2>Bimbingan Belajar Siriusly</h2>
-            <p>Ilmu untuk Semua, Iman sebagai Fondasi</p>
-        </div>
-        <div class="promo-button">
-            <a href="brosur.pdf" class="btn-brosur" target="_blank">Download Brosur</a>
-        </div>
-    </section>
-    <!-- Teks "Ada Apa Saja di Siriusly?" -->
-    <section class="info-section">
-        <h2>Ada Apa Saja di Siriusly?</h2>
-    </section>
-
-    <section class="features">
-        <div class="feature-item">
-            <img src="https://img.freepik.com/premium-vector/mathematics-education-school-lesson-concept-textbook-notebook-with-writings-calculator-pen-compass-around-green-chalkboard-with-tasks-math-formulas-cartoon_1016-3408.jpg?w=900" alt="Fitur 1">
-            <h3><a href="Matematika.html">Private Matematika</a></h3>
-            <p>Kelas intensif satu-satu untuk tingkat SD-SMA/SMK, fokus pada pemahaman konsep kritis (aljabar, geometri, kalkulus) melalui metode problem-based learning.</p>
-        </div>
-        <div class="feature-item">
-            <img src="https://img.freepik.com/free-vector/male-student-cartoon-holding-conical-flask-science-class-experiment_1308-158998.jpg?t=st=1743664561~exp=1743668161~hmac=60e1ba6662c87a5f5800a6a902c659cc94c76bcb8d5b5672a82d50d5b24b08cc&w=740" alt="Fitur 2">
-            <h3><a href="MatematikaIPA.html">Matematika IPA</a></h3>
-            <p>Kombinasi belajar Matematika dan IPA (Fisika, Kimia, Biologi) dengan pendekatan kontekstual.</p>
-        </div>
-        <div class="feature-item">
-            <img src="https://img.freepik.com/free-vector/hand-drawn-college-entrance-exam-illustration_23-2150368549.jpg?t=st=1743664599~exp=1743668199~hmac=2ae3a80fd043069aa76a74870b8610b4bb35dea65b9be12b0a3c98919a62246e&w=740" alt="Fitur 3">
-            <h3><a href="FokusUjian.html"> Fokus Ujian</a></h3>
-            <p>Persiapan target spesifik: ujian sekolah, UN, atau kenaikan kelas. Fokus pada strategi menjawab cepat, manajemen waktu, dan latihan soal prediktif.</p>
-        </div>
-        <div class="feature-item">
-            <img src="https://img.freepik.com/free-vector/hand-drawn-college-entrance-exam-illustration_52683-112608.jpg?t=st=1743664648~exp=1743668248~hmac=8934eda87917011dd608c02fa3adce6c928f1c421b3096a050280d232997b945&w=740" alt="Fitur 3">
-            <h3><a href="FokusUTBK.html">Fokus UTBK</a></h3>
-            <p>Kelas eksklusif untuk mahirkan materi UTBK Saintek/Soshum: Matematika IPA, Fisika, Kimia, dan literasi kritis.</p>
-        </div>
-    </section>
-    <section class="visi-misi">
-        <div class="visi-misi-container">
-            <div class="visi-misi-text">
-                <h2>Visi & Misi Siriusly</h2>
-                <p><strong>Visi:</strong> Menjadi mitra belajar digital terdepan yang memadukan inovasi teknologi, kualitas pendidikan, dan nilai-nilai Islami untuk menciptakan generasi cerdas, berintegritas, dan adaptif dalam menghadapi tantangan global.</p>
-                <p><strong>Misi:</strong></p>
-                <ul>
-                    <li>🔹 Menyediakan pembelajaran interaktif.</li>
-                    <li>🔹 Memastikan kualitas materi pembelajaran.</li>
-                    <li>🔹 Menanamkan nilai-nilai Islami .</li>
-                    <li>🔹 Mendorong pemerataan akses pendidikan .</li>
-                    <li>🔹 Berinovasi secara berkelanjutan .</li>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="footer__logo">
+                <img src="gambar/siriusly.png" alt="Siriusly Academy Logo" class="footer-logo-img">
+                <span>Siriusly Academy</span>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Beranda</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Tentang</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Layanan</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#pricing" class="nav__link">Harga</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#testimonials" class="nav__link">Testimoni</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Kontak</a>
+                    </li>
                 </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
             </div>
-            <div class="visi-misi-image">
-                <img src="https://img.freepik.com/free-vector/online-certification-concept-illustration_114360-5519.jpg" alt="Visi Misi">
+            <div class="nav__btns">
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
-        </div>
-    </section>
+        </nav>
+    </header>
 
-    <!-- Testimoni -->
-    <section class="testimoni">
-        <h2>Apa Kata Mereka?</h2>
-        <div class="testimoni-container">
-            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-            <div class="testimoni-wrapper">
-                <div class="testimoni-item">
-                    <img src="https://cdn-icons-png.flaticon.com/128/1077/1077012.png" alt="Siswa Private Matematika">
-                    <p>"Belajar di Siriusly itu seru banget! Aku jadi lebih paham konsep dasar Matematika dan sekarang lebih percaya diri mengerjakan soal ujian!"</p>
-                    <h3>Syifa - Private Matematika</h3>
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="hero__bg"></div>
+            <div class="hero__container container">
+                <div class="hero__data">
+                    <h1 class="hero__title">
+                        <span class="typing-text">Wujudkan Prestasi Terbaikmu!</span>
+                    </h1>
+                    <p class="hero__description">
+                        Pembelajaran berkualitas untuk SD, SMP, dan SMA dengan metode modern dan menyenangkan di siriusly Academy
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="https://wa.me/081313772566?text=Halo, saya tertarik dengan program bimbingan belajar di siriusly Academy" class="btn btn--primary btn--hero" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Daftar Sekarang
+                        </a>
+                        <a href="https://wa.me/081313772566?text=Halo, saya ingin konsultasi gratis mengenai program yang sesuai untuk anak saya" class="btn btn--outline btn--hero" target="_blank">
+                            Konsultasi Gratis
+                        </a>
+                    </div>
                 </div>
-                <div class="testimoni-item">
-                    <img src="https://cdn-icons-png.flaticon.com/128/1077/1077012.png" alt="Siswa Matematika IPA">
-                    <p>"Materi yang sulit jadi lebih mudah dipahami karena banyak latihan soal dan penjelasan yang jelas. Tutor di Siriusly juga sangat sabar!"</p>
-                    <h3>Putri - Matematika IPA</h3>
-                </div>
-                <div class="testimoni-item">
-                    <img src="https://cdn-icons-png.flaticon.com/128/1077/1077012.png" alt="Siswa Matematika IPA">
-                    <p>"Dulu takut remedial Matematika, sekarang malah jadi juara kelas! Terima kasih Siriusly!"</p>
-                    <h3>Dito, Siswa SMP Kelas 9</h3>
-                </div>
-                <div class="testimoni-item">
-                    <img src="https://cdn-icons-png.flaticon.com/128/1077/1077012.png" alt="Siswa Matematika IPA">
-                    <p>"Berkat Siriusly, nilai PAS anakku naik drastis! Dia sekarang lebih percaya diri dan rajin berdoa sebelum ujian"</p>
-                    <h3>Ibu Rina, Orang Tua Siswa SD</h3>
-                </div>
-                <div class="testimoni-item">
-                    <img src="https://cdn-icons-png.flaticon.com/128/1077/1077012.png" alt="Siswa Matematika IPA">
-                    <p>"Lolos CPNS berkat strategi TWK Siriusly. Materi integrasi Islam & kebangsaan bikin saya beda dari peserta lain!"</p>
-                    <h3>Andi, Lulusan Ujian Kedinasan 2023</h3>
-                </div>
-            </div>
-            <button class="next" onclick="moveSlide(1)">&#10095;</button>
-        </div>
-    </section>
-    
-    <!-- Dokumentasi -->
-    <section class="dokumentasi">
-        <h2>Dokumentasi Kegiatan</h2>
-        <div class="dokumentasi-container">
-            <div class="dokumentasi-wrapper">
-                <img src="1.png" alt="Dok 1">
-                <img src="2.png" alt="Dok 2">
-                <img src="3.png" alt="Dok 3">
-                <img src="4.png" alt="Dok 4">
-                <img src="5.png" alt="Dok 5">
-                <img src="6.png" alt="Dok 6">
-                <img src="7.png" alt="Dok 7">
-                <img src="8.png" alt="Dok 8">
-                <img src="9.png" alt="Dok 9">
-                <img src="10.png" alt="Dok 10">
-            </div>
-        </div>
-    </section>
-
-    <section class="media-partner">
-        <h2>Media Partner</h2>
-        <div class="media-partner-container">
-            <img src="Geogebra Logo.jpg" alt="Partner 1">
-            <img src="Kahoot Logo.jpg" alt="Partner 2">
-            <img src="Quizizz Logo.png" alt="Partner 3">
-            <img src="Maple Logo.png" alt="Partner 4">
-            <img src="Live Worksheets Logo.png" alt="Partner 5">
-        </div>
-    </section>
-
-    <section class="info-section">
-        <div class="info-container">
-    
-            <!-- Google Maps -->
-            <div class="info-maps">
-                <iframe 
-                    src="//www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1177.5864027382975!2d107.53959444984278!3d-6.901038871759401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sid!2sid!4v1742993375883!5m2!1sid!2sid" 
-                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-                </iframe>
-            </div>
-    
-            <!-- Informasi Bisnis -->
-            <div class="info-details">
-                <div class="info-box">
-                    <h3>📞 Kontak</h3>
-                    <p>0813-1377-2566</p>
-                    <p>siriuslyeducation@gmail.com</p>
-                </div>
-    
-                <div class="info-box">
-                    <h3>📍 Alamat</h3>
-                    <p>Jl. Cibogo No.44, Kota Cimahi</p>
-                </div>
-    
-                <div class="info-box">
-                    <h3>⏰ Jam Kerja</h3>
-                    <p>Senin - Jumat: 08.00 - 17.00</p>
-                    <p>Sabtu: 08.00 - 12.00</p>
-                </div>
-    
-                <div class="info-box">
-                    <h3>📢 Sosial Media</h3>
-                    <div class="social-icons">
-                        <a href="https://wa.me/6281313772566"><img src="whatsapp.png" alt="Whatsapp"></a>
-                        <a href="https://instagram.com"><img src="instagram.png" alt="Instagram"></a>
-                        <a href="https://tiktok.com/@siriuslyid"><img src="tik-tok.png" alt="YouTube"></a>
-                        <a href="https://youtube.com"><img src="youtube.png" alt="YouTube"></a>
+                <div class="hero__stats">
+                    <div class="stat__item">
+                        <div class="stat__number" data-target="500">0</div>
+                        <div class="stat__label">Siswa Aktif</div>
+                    </div>
+                    <div class="stat__item">
+                        <div class="stat__number" data-target="25">0</div>
+                        <div class="stat__label">Pengajar Ahli</div>
+                    </div>
+                    <div class="stat__item">
+                        <div class="stat__number" data-target="5">0</div>
+                        <div class="stat__label">Tahun Pengalaman</div>
                     </div>
                 </div>
             </div>
-    
-        </div>
-    </section>
-    
-    <div class="social-bubble">
-        <a href="https://wa.me/6281313772566" target="_blank" class="whatsapp">
-            <img src="whatsapp.png" alt="WhatsApp">
-        </a>
-        <a href="https://instagram.com/your_instagram" target="_blank" class="instagram">
-            <img src="instagram.png" alt="Instagram">
-        </a>
-    </div>
+        </section>
 
-    <footer class="footer-copyright">
-        <p>&copy; 2025 Siriusly - Digital Learning Hub. All rights reserved.</p>
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Tentang siriusly Academy</h2>
+                    <p class="section__subtitle">Bimbingan belajar terpercaya dengan metode pembelajaran inovatif</p>
+                </div>
+                <div class="about__container">
+                    <div class="about__content">
+                        <div class="about__data">
+                            <h3 class="about__title">Mengapa Memilih siriusly Academy?</h3>
+                            <p class="about__description">
+                                Kami adalah bimbingan belajar yang berkomitmen untuk memberikan pendidikan berkualitas tinggi dengan pendekatan personal dan metode pembelajaran yang modern. Dengan pengalaman lebih dari 5 tahun, kami telah membantu ratusan siswa mencapai prestasi terbaik mereka.
+                            </p>
+                            <div class="about__features">
+                                <div class="feature__item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Metode pembelajaran interaktif dan menyenangkan</span>
+                                </div>
+                                <div class="feature__item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Pengajar berpengalaman dan kompeten</span>
+                                </div>
+                                <div class="feature__item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Kurikulum sesuai standar nasional</span>
+                                </div>
+                                <div class="feature__item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span>Kelas kecil untuk perhatian maksimal</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services section" id="services">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Layanan Kami</h2>
+                    <p class="section__subtitle">Program pembelajaran lengkap untuk semua jenjang pendidikan - Klik untuk melihat detail!</p>
+                </div>
+                <div class="services__container">
+                    <div class="service__card" data-service="mathematics">
+                        <div class="service__icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <h3 class="service__title">Matematika</h3>
+                        <p class="service__description">Pembelajaran konsep dasar hingga lanjutan dengan metode yang mudah dipahami</p>
+                        <div class="service__level">SD - SMA</div>
+                        <ul class="service__features">
+                            <li><i class="fas fa-check"></i> Pemahaman Konsep</li>
+                            <li><i class="fas fa-check"></i> Latihan Soal</li>
+                            <li><i class="fas fa-check"></i> Persiapan Ujian</li>
+                            <li><i class="fas fa-check"></i> Metode Cepat</li>
+                        </ul>
+                        <div class="service__cta">
+                            <button class="btn btn--primary btn--sm">Lihat Detail</button>
+                        </div>
+                    </div>
+
+                    <div class="service__card" data-service="programming">
+                        <div class="service__icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="service__title">Programming</h3>
+                        <p class="service__description">Belajar coding dari dasar hingga membuat aplikasi dan website sendiri</p>
+                        <div class="service__level">SD - SMA</div>
+                        <ul class="service__features">
+                            <li><i class="fas fa-check"></i> Scratch Programming</li>
+                            <li><i class="fas fa-check"></i> Python</li>
+                            <li><i class="fas fa-check"></i> Web Development</li>
+                            <li><i class="fas fa-check"></i> Mobile Apps</li>
+                        </ul>
+                        <div class="service__cta">
+                            <button class="btn btn--primary btn--sm">Lihat Detail</button>
+                        </div>
+                    </div>
+
+                    <div class="service__card" data-service="robotics">
+                        <div class="service__icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="service__title">Robotik</h3>
+                        <p class="service__description">Mengenal dunia robotika dari assembly hingga programming robot</p>
+                        <div class="service__level">SD - SMA</div>
+                        <ul class="service__features">
+                            <li><i class="fas fa-check"></i> Elektronika Dasar</li>
+                            <li><i class="fas fa-check"></i> Assembly Robot</li>
+                            <li><i class="fas fa-check"></i> Programming</li>
+                            <li><i class="fas fa-check"></i> IoT Projects</li>
+                        </ul>
+                        <div class="service__cta">
+                            <button class="btn btn--primary btn--sm">Lihat Detail</button>
+                        </div>
+                    </div>
+
+                    <div class="service__card" data-service="science">
+                        <div class="service__icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3 class="service__title">IPA</h3>
+                        <p class="service__description">Fisika, Kimia, dan Biologi dengan pendekatan eksperimen yang menyenangkan</p>
+                        <div class="service__level">SD - SMA</div>
+                        <ul class="service__features">
+                            <li><i class="fas fa-check"></i> Eksperimen</li>
+                            <li><i class="fas fa-check"></i> Konsep Teori</li>
+                            <li><i class="fas fa-check"></i> Praktikum</li>
+                            <li><i class="fas fa-check"></i> Persiapan Ujian</li>
+                        </ul>
+                        <div class="service__cta">
+                            <button class="btn btn--primary btn--sm">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Detail Modal -->
+        <div class="modal hidden" id="service-modal">
+            <div class="modal__overlay">
+                <div class="modal__content">
+                    <div class="modal__header">
+                        <h2 class="modal__title" id="modal-title">Detail Layanan</h2>
+                        <button class="modal__close" id="modal-close">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal__body">
+                        <div class="modal__tabs">
+                            <button class="tab__button active" data-level="SD">SD</button>
+                            <button class="tab__button" data-level="SMP">SMP</button>
+                            <button class="tab__button" data-level="SMA">SMA</button>
+                        </div>
+                        <div class="modal__tab-content" id="modal-tab-content">
+                            <!-- Content will be dynamically inserted here -->
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <a href="https://wa.me/081313772566?text=Halo, saya tertarik dengan program pembelajaran di siriusly Academy" class="btn btn--primary" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Konsultasi Program Ini
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing Section -->
+        <section class="pricing section" id="pricing">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Paket Harga Fleksibel</h2>
+                    <p class="section__subtitle">Pilih paket yang sesuai dengan kemampuan dan kebutuhan belajar Anda</p>
+                </div>
+                
+                <!-- Level Selector -->
+                <div class="pricing__level-selector">
+                    <div class="level__buttons">
+                        <button class="level__btn active" data-level="SD">SD</button>
+                        <button class="level__btn" data-level="SMP">SMP</button>
+                        <button class="level__btn" data-level="SMA">SMA</button>
+                    </div>
+                </div>
+
+                <div class="pricing__container">
+                    <div class="pricing__card" data-package="basic">
+                        <div class="pricing__header">
+                            <h3 class="pricing__title">Basic</h3>
+                            <p class="pricing__subtitle">Terjangkau untuk Semua</p>
+                            <div class="pricing__price">
+                                <span class="price__amount" data-sd="130000" data-smp="150000" data-sma="230000">Rp 130.000</span>
+                                <span class="price__period">/bulan</span>
+                            </div>
+                        </div>
+                        <div class="pricing__body">
+                            <ul class="pricing__features">
+                                <li><i class="fas fa-check"></i> 4x pertemuan per bulan</li>
+                                <li><i class="fas fa-check"></i> 1.5 jam per sesi</li>
+                                <li><i class="fas fa-check"></i> Materi standar kurikulum</li>
+                                <li><i class="fas fa-check"></i> WhatsApp support</li>
+                                <li><i class="fas fa-check"></i> Digital worksheet</li>
+                                <li><i class="fas fa-check"></i> Sertifikat</li>
+                            </ul>
+                        </div>
+                        <div class="pricing__footer">
+                            <a href="https://wa.me/081313772566?text=Halo, saya tertarik dengan paket Basic di siriusly Academy" class="btn btn--outline btn--full-width" target="_blank">Pilih Paket</a>
+                        </div>
+                    </div>
+
+                    <div class="pricing__card pricing__card--featured" data-package="standard">
+                        <div class="pricing__badge">Populer</div>
+                        <div class="pricing__header">
+                            <h3 class="pricing__title">Standard</h3>
+                            <p class="pricing__subtitle">Pilihan Populer</p>
+                            <div class="pricing__price">
+                                <span class="price__amount" data-sd="200000" data-smp="245000" data-sma="385000">Rp 200.000</span>
+                                <span class="price__period">/bulan</span>
+                            </div>
+                        </div>
+                        <div class="pricing__body">
+                            <ul class="pricing__features">
+                                <li><i class="fas fa-check"></i> 7x pertemuan per bulan</li>
+                                <li><i class="fas fa-check"></i> 1.5 jam per sesi</li>
+                                <li><i class="fas fa-check"></i> Materi standar + pengayaan</li>
+                                <li><i class="fas fa-check"></i> WhatsApp + video call support</li>
+                                <li><i class="fas fa-check"></i> Worksheet tambahan</li>
+                                <li><i class="fas fa-check"></i> Progress tracking</li>
+                                <li><i class="fas fa-check"></i> Free Akses Materi + Simulasi</li>
+                                <li><i class="fas fa-check"></i> Sertifikat</li>
+                            </ul>
+                        </div>
+                        <div class="pricing__footer">
+                            <a href="https://wa.me/081313772566?text=Halo, saya tertarik dengan paket Standard di siriusly Academy" class="btn btn--primary btn--full-width" target="_blank">Pilih Paket</a>
+                        </div>
+                    </div>
+
+                    <div class="pricing__card" data-package="premium">
+                        <div class="pricing__header">
+                            <h3 class="pricing__title">Premium</h3>
+                            <p class="pricing__subtitle">Pembelajaran Lengkap</p>
+                            <div class="pricing__price">
+                                <span class="price__amount" data-sd="650000" data-smp="750000" data-sma="850000">Rp 650.000</span>
+                                <span class="price__period">/bulan</span>
+                            </div>
+                        </div>
+                        <div class="pricing__body">
+                            <ul class="pricing__features">
+                                <li><i class="fas fa-check"></i> 10x pertemuan per bulan</li>
+                                <li><i class="fas fa-check"></i> 2 jam per sesi</li>
+                                <li><i class="fas fa-check"></i> Materi lengkap + project</li>
+                                <li><i class="fas fa-check"></i> 24/7 support</li>
+                                <li><i class="fas fa-check"></i> Progress report bulanan</li>
+                                <li><i class="fas fa-check"></i> Trial ujian</li>
+                                <li><i class="fas fa-check"></i> Free Akses Materi + Simulasi</li>
+                                <li><i class="fas fa-check"></i> Sertifikat</li>
+                            </ul>
+                        </div>
+                        <div class="pricing__footer">
+                            <a href="https://wa.me/081313772566?text=Halo, saya tertarik dengan paket Premium di siriusly Academy" class="btn btn--outline btn--full-width" target="_blank">Pilih Paket</a>
+                        </div>
+                    </div>
+
+                    <div class="pricing__card" data-package="vip">
+                        <div class="pricing__header">
+                            <h3 class="pricing__title">VIP</h3>
+                            <p class="pricing__subtitle">All-Inclusive Premium</p>
+                            <div class="pricing__price">
+                                <span class="price__amount" data-sd="1200000" data-smp="1400000" data-sma="1600000">Rp 1.200.000</span>
+                                <span class="price__period">/bulan</span>
+                            </div>
+                        </div>
+                        <div class="pricing__body">
+                            <ul class="pricing__features">
+                                <li><i class="fas fa-check"></i> Unlimited pertemuan</li>
+                                <li><i class="fas fa-check"></i> Flexible duration</li>
+                                <li><i class="fas fa-check"></i> Personal curriculum</li>
+                                <li><i class="fas fa-check"></i> Dedicated mentor</li>
+                                <li><i class="fas fa-check"></i> All materials included</li>
+                                <li><i class="fas fa-check"></i> Priority support</li>
+                                <li><i class="fas fa-check"></i> Career guidance</li>
+                            </ul>
+                        </div>
+                        <div class="pricing__footer">
+                            <a href="https://wa.me/081313772566?text=Halo, saya tertarik dengan paket VIP di siriusly Academy" class="btn btn--outline btn--full-width" target="_blank">Pilih Paket</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing__consultation">
+                    <div class="consultation__card">
+                        <h3>Butuh Bantuan Memilih Paket?</h3>
+                        <p>Konsultasikan dengan tim kami untuk mendapatkan rekomendasi paket yang paling sesuai dengan kebutuhan dan kemampuan Anda</p>
+                        <a href="https://wa.me/081313772566?text=Halo, saya ingin konsultasi untuk menentukan paket yang sesuai untuk anak saya di siriusly Academy" class="btn btn--primary btn--lg" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Konsultasi Paket
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials section" id="testimonials">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Testimoni</h2>
+                    <p class="section__subtitle">Apa kata siswa dan orang tua tentang siriusly Academy</p>
+                </div>
+                <div class="testimonials__container">
+                    <div class="testimony__slider" id="testimony-slider">
+                        <div class="testimony__slide active">
+                            <div class="testimony__content">
+                                <div class="testimony__stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="testimony__text">"Paket Basic sangat terjangkau untuk keluarga kami. Anak saya yang tadinya kesulitan dengan matematika, sekarang jadi lebih percaya diri. Metode pengajaran di siriusly Academy sangat mudah dipahami!"</p>
+                                <div class="testimony__author">
+                                    <div class="testimony__avatar">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="testimony__info">
+                                        <h4 class="testimony__name">Ibu Sari Wulandari</h4>
+                                        <span class="testimony__role">Orang Tua Siswa Kelas 5 SD</span>
+                                        <span class="testimony__package">Paket Basic</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimony__slide">
+                            <div class="testimony__content">
+                                <div class="testimony__stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="testimony__text">"Belajar programming di paket Standard seru banget! Guru-gurunya sabar dan bikin coding jadi gampang dimengerti. Sekarang udah bisa bikin website sendiri!"</p>
+                                <div class="testimony__author">
+                                    <div class="testimony__avatar">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="testimony__info">
+                                        <h4 class="testimony__name">Ahmad Rifaldi</h4>
+                                        <span class="testimony__role">Siswa Kelas 8 SMP</span>
+                                        <span class="testimony__package">Paket Standard</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimony__slide">
+                            <div class="testimony__content">
+                                <div class="testimony__stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="testimony__text">"Paket Premium worth it banget! Nilai fisika anak saya meningkat drastis setelah ikut les di siriusly. Progress report bulanannya membantu kami memantau perkembangan."</p>
+                                <div class="testimony__author">
+                                    <div class="testimony__avatar">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="testimony__info">
+                                        <h4 class="testimony__name">Bapak Hendri Gunawan</h4>
+                                        <span class="testimony__role">Orang Tua Siswa Kelas 11 SMA</span>
+                                        <span class="testimony__package">Paket Premium</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimony__slide">
+                            <div class="testimony__content">
+                                <div class="testimony__stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="testimony__text">"Seneng banget belajar robotik di siriusly Academy. Dengan paket VIP, aku bisa belajar kapan saja dan gurunya datang ke rumah! Sekarang aku bisa bikin robot sendiri dan menang lomba di sekolah!"</p>
+                                <div class="testimony__author">
+                                    <div class="testimony__avatar">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="testimony__info">
+                                        <h4 class="testimony__name">Siti Nurhaliza</h4>
+                                        <span class="testimony__role">Siswa Kelas 3 SD</span>
+                                        <span class="testimony__package">Paket VIP</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimony__slide">
+                            <div class="testimony__content">
+                                <div class="testimony__stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="testimony__text">"Berkat paket Premium dengan trial ujiannya, anak saya berhasil masuk PTN favorit. Investasi terbaik untuk masa depan anak!"</p>
+                                <div class="testimony__author">
+                                    <div class="testimony__avatar">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                    <div class="testimony__info">
+                                        <h4 class="testimony__name">Ibu Diana Putri</h4>
+                                        <span class="testimony__role">Orang Tua Siswa Kelas 12 SMA</span>
+                                        <span class="testimony__package">Paket Premium</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimony__navigation">
+                        <div class="testimony__dots" id="testimony-dots">
+                            <span class="testimony__dot active" data-slide="0"></span>
+                            <span class="testimony__dot" data-slide="1"></span>
+                            <span class="testimony__dot" data-slide="2"></span>
+                            <span class="testimony__dot" data-slide="3"></span>
+                            <span class="testimony__dot" data-slide="4"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section">
+            <div class="container">
+                <div class="projects__content">
+                    <div class="projects__data">
+                        <h2 class="projects__title">Layanan Pembuatan Proyek Khusus</h2>
+                        <p class="projects__description">
+                            Kami juga menyediakan jasa pembuatan website, aplikasi mobile, dan proyek teknologi untuk keperluan bisnis dan edukasi. Tim ahli kami siap membantu mewujudkan ide digital Anda.
+                        </p>
+                        <div class="projects__features">
+                            <div class="projects__feature">
+                                <i class="fas fa-globe"></i>
+                                <span>Website Development</span>
+                            </div>
+                            <div class="projects__feature">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Mobile Apps</span>
+                            </div>
+                            <div class="projects__feature">
+                                <i class="fas fa-cogs"></i>
+                                <span>Custom Solutions</span>
+                            </div>
+                        </div>
+                        <a href="lyne_digital\index.html" class="btn btn--primary btn--lg" target="_blank">
+                            <i class="fas fa-arrow-right"></i>
+                            Lihat Layanan Proyek
+                        </a>
+                    </div>
+                    <div class="projects__visual">
+                        <div class="projects__icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Hubungi Kami</h2>
+                    <p class="section__subtitle">Siap membantu perjalanan belajar Anda menuju kesuksesan</p>
+                </div>
+                <div class="contact__container">
+                    <div class="contact__content">
+                        <h3 class="contact__title">Mari Bergabung dengan siriusly Academy</h3>
+                        <p class="contact__description">
+                            Jangan ragu untuk menghubungi kami untuk konsultasi gratis dan informasi lebih lanjut tentang program bimbingan belajar yang sesuai dengan kebutuhan Anda.
+                        </p>
+                        <div class="contact__info">
+                            <div class="contact__item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Bandung Raya, Jawa Barat</span>
+                            </div>
+                            <div class="contact__item">
+                                <i class="fas fa-phone"></i>
+                                <span>081313772566</span>
+                            </div>
+                            <div class="contact__item">
+                                <i class="fas fa-envelope"></i>
+                                <span>-</span>
+                            </div>
+                        </div>
+                        <div class="contact__cta">
+                            <a href="https://wa.me/081313772566?text=Halo, saya ingin mengetahui lebih lanjut tentang program bimbingan belajar di Siriusly Academy" class="btn btn--primary btn--lg" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                Hubungi Kami Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <div class="footer__content">
+                    <div class="footer__section">
+                        <div class="footer__logo">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Siriusly Academy</span>
+                        </div>
+                        <p class="footer__description">
+                            Bimbingan belajar terpercaya dengan metode pembelajaran inovatif untuk mencapai prestasi terbaik.
+                        </p>
+                        <div class="footer__social">
+                            <a href="https://instagram.com/siriuslyacademy" class="footer__social-link" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://youtube.com/@siriuslyAcademy" class="footer__social-link" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://tiktok.com/@siriuslyacademy" class="footer__social-link" target="_blank">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="https://wa.me/081313772566" class="footer__social-link" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__section">
+                        <h3 class="footer__title">Layanan</h3>
+                        <ul class="footer__links">
+                            <li><a href="#services">Matematika</a></li>
+                            <li><a href="#services">Programming</a></li>
+                            <li><a href="#services">Robotik</a></li>
+                            <li><a href="#services">IPA</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__section">
+                        <h3 class="footer__title">Program</h3>
+                        <ul class="footer__links">
+                            <li><a href="#pricing">Basic</a></li>
+                            <li><a href="#pricing">Standard</a></li>
+                            <li><a href="#pricing">Premium</a></li>
+                            <li><a href="#pricing">VIP</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__section">
+                        <h3 class="footer__title">Kontak</h3>
+                        <ul class="footer__links">
+                            <li>WhatsApp: 081313772566</li>
+                            <li>Instagram: @siriuslyacademy</li>
+                            <li>YouTube: @siriuslyAcademy</li>
+                            <li>TikTok: @siriuslyacademy</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p>&copy; 2025 siriusly Academy. Semua hak cipta dilindungi.</p>
+                </div>
+            </div>
+        </div>
     </footer>
-    
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="app.js"></script>
 </body>
 </html>
